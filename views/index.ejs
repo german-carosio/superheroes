@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Clase Super Secreta Express</title>
+</head>
+<body>
+
+  <section class="main__heroes">
+
+    <h1>Heroes APP</h1>
+
+    <% heroe.forEach(element => { %>
+
+      <article>
+        <a href="/detail/<%= elemento.id %> ">
+          <h3><%= element.superhero  %> </h3>
+          <img src="/images/<%= element.id %>.jpg" alt="">
+        </a>
+        <ul>
+          <li> <%= element.publisher %> </li>
+          <li> <%= element.alter_ego %>  </li>
+          <li> <%= element.first_appearance %>  </li>
+          <li> <%= element.characters %>  </li>
+        </ul>
+
+      </article>
+     
+    <% }) %>
+
+    <%= element.id %> 
+
+    
+  </section>
+</body>
+</html>

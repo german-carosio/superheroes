@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article {
+  flex: 1;
+  padding: 1rem;
+  margin: 1rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
