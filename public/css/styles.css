@@ -7,14 +7,10 @@
 
 .section {
   display: flex;
-  flex-wrap: wrap;
+  border: solid #000 1px;
 }
 
 .article {
-  flex: 1;
-  padding: 1rem;
-  margin: 1rem;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  padding: 20px;
+  margin: 10px;
 }

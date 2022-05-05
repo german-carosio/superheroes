@@ -5,7 +5,7 @@ const path = require('path')
 const app = express();
 
 // Declaramos puerto de express
-const expressPort = 3030;
+const expressPort = 3000;
 
 // Importando archivo de routes
 const indexRoutes = require('./routes/indexRouter')
@@ -19,7 +19,7 @@ app.use(express.static('public'));
 
 // Ejecución del servidor
 app.listen(process.env.PORT || expressPort, ()=> {
-  console.log('Express corriendo correctamente, ¡Hello World!')
+  console.log('Express corriendo correctamente')
 })
 
 // Declarando rutas de la página principal
